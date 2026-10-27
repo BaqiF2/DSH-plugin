@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Prompt Gallery">
+  <defs>
+    <linearGradient id="pg-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d7cfe"/>
+      <stop offset="1" stop-color="#7b5cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#pg-bg)"/>
+  <path d="M20 15h20a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V19a4 4 0 0 1 4-4Z" fill="#ffffff" opacity="0.94"/>
+  <path d="M20 15h20a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V19a4 4 0 0 1 4-4Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M40 15v13l-5-4-5 4V15" fill="#7b5cff"/>
+  <path d="M23 36h14M23 42h9" stroke="#4d7cfe" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

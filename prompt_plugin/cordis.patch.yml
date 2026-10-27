@@ -1,0 +1,7 @@
+# dsh-prompt-gallery bundle patch: mounts the plugin as one Host row.
+# The Host half owns persistence and the Web API; the Client half
+# (dsh.client) renders the composer toolbar, library panel and message
+# capture buttons in the Web UI.
+- insert:
+    - id: prompt-gallery
+      name: '@local/dsh-prompt-gallery'

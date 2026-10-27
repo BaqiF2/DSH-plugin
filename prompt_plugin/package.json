@@ -1,0 +1,48 @@
+{
+  "name": "@local/dsh-prompt-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness prompt library plugin: categorized prompt management with descriptions, one-click capture from user chat messages, and in-composer prompt optimization. 提示词库插件：分类管理提示词与作用描述、从用户消息一键收藏、输入框内提示词优化。",
+  "keywords": [
+    "dsh",
+    "plugin",
+    "prompt",
+    "prompt-library",
+    "deepseek-harness"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "icon": "./icon.svg",
+  "main": "./host/index.js",
+  "exports": {
+    ".": "./host/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "host",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
